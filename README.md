@@ -46,3 +46,4 @@ Proyek ini secara otomatis menghasilkan laporan HTML yang rapi beserta bukti vis
 
     ----------------------------- Captured stdout call -----------------------------
     Membuka halaman login...
+<img width="1338" height="679" alt="Report" src="https://github.com/user-attachments/assets/4e1f5037-9bc0-447e-b27e-77867c44a091" />
