@@ -23,4 +23,26 @@ Proyek ini adalah portofolio pengujian otomasi *End-to-End* (E2E) untuk sebuah *
 ## 📊 Contoh Laporan (Reporting)
 Proyek ini secara otomatis menghasilkan laporan HTML yang rapi beserta bukti visual jika ada *error*.
 
-*(Tambahkan gambar screenshot dari report.html milikmu di sini)*
+
+page = <Page url='https://www.saucedemo.com/inventory.html'>
+
+    def test_checkout_barang_sukses(page):
+        # 1. Login (Sama seperti sebelumnya)
+        print("Membuka halaman login...")
+        page.goto("https://www.saucedemo.com/")
+        page.fill("#user-name", "standard_user")
+        page.fill("#password", "secret_sauce")
+        page.click("#login-button")
+    
+        # Pastikan berhasil masuk
+>       assert page.url == "https://www.saucedemo.com/inventory.htmly"
+E       AssertionError: assert 'https://www....nventory.html' == 'https://www....ventory.htmly'
+E         
+E         - https://www.saucedemo.com/inventory.htmly
+E         ?                                         -
+E         + https://www.saucedemo.com/inventory.html
+
+test_checkout.py:12: AssertionError
+
+----------------------------- Captured stdout call -----------------------------
+Membuka halaman login...
